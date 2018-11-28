@@ -21,9 +21,14 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'arrow-parens': 'off',
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'eol-last':'off',
+    'space-before-function-paren':'off',
+    //关闭禁止混用tab和空格
+    "no-mixed-spaces-and-tabs": 'off',
   }
-}
+};
