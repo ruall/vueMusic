@@ -8,7 +8,7 @@ export default function jsonp(url, data, option) {
    * 获取url
    * 判断是否有？，如果没有就添加？，如果有就添加&
    * */
-  url = (url.indexOf('?') < 0 ? '?' : '&') + param(data);
+  url += (url.indexOf('?') < 0 ? '?' : '&') + param(data);
   /**
    * 发送Promise请求
    * 成功就执行resolved，失败就执行reject
