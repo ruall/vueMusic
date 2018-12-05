@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="loading-container" v-show="!discList.length">
-        <loading></loading>
+        <loading :title='loading'></loading>
       </div>
     </scroll>
   </div>
@@ -45,6 +45,7 @@
       return {
         recommends: [],
         discList: [],
+        loading:'加载中...'
       }
     },
     components: {
